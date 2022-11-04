@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>svoboda</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title change-text">Поиск</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <form method="get" class="searchform" action="/search" role="search">
+                            <input type="hidden" name="type" value="product">
+                            <input type="text" name="q" class="form-control control-search">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default button_search" type="button"><i data-toggle="dropdown" class="fa fa-search"></i></button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END  Modal content-->
+    <div class="wrappage">
+        <header id="header" class="header-v4 header-top-absolute white">
+            <div class="sticky-header text-center hidden-xs hidden-sm">
+                <div class="text">
+                    <span class="u-line">Бесплатная доставка и возврат</span> на все заказы от 3000 рублей
+                </div>
+            </div>
+            <div class="topbar">
+                <div class="container container-40">
+                    <div class="topbar-left">
+                        <div class="topbar-option">
+                            <div class="topbar-account">
+                                <a href="#"><i class="icon-user f-15"></i></a>
+                            </div>
+                            <div class="topbar-wishlist">
+                                <a href="#">
+                                <i class="icon-heart f-15"></i>
+                                <span class="count wishlist-count">0</span>
+                            </a>
+                            </div>
+                        </div>
+                        <!--end topbar-option-->
+                    </div>
+                    <!--end topbar-left-->
+                    <div class="topbar-right">
+                        <div class="topbar-option">
+                            <div class="topbar-search">
+                                <div class="search-popup dropdown" data-toggle="modal" data-target="#myModal">
+                                    <a href="#"><i class="icon-magnifier f-15"></i></a>
+                                </div>
+                            </div>
+                            <div class="topbar-cart">
+                                <a href="cart_page_prodcut.html" class="icon-cart">
+                                <i class="icon-basket f-15"></i>
+                                <span class="count cart-count">0</span>
+                            </a>
+                            </div>
+                        </div>
+                        <!--end topbar-option-->
+                    </div>
+                    <!--end topbar-right-->
+                    <!-- menu with logo-->
+                    <div class="topbar-center hidden-xs hidden-sm">
+                        <ul class="nav navbar-nav js-menubar">
+                            <li class="level1 active dropdown"><a href="#">Главная</a>
+                                <span class="plus js-plus-icon"></span>
+                            </li>
+                            <li class="level1 dropdown hassub"><a href="#">Каталог</a>
+                                <span class="plus js-plus-icon"></span>
+                                <div class="menu-level-1 dropdown-menu">
+                                    <ul class="level1">
+                                        <li class="level2 col-6">
+                                            <a href="#">Женщинам</a>
+                                            <ul class="menu-level-2 col-6">
+                                            </ul>
+                                            <div class="mega-product col-6">
+                                                <a href="#"><img src="img/mega_1.jpg" alt="" class="img-responsive"></a>
+                                            </div>
+                                            <div class="cleafix"></div>
+                                        </li>
+                                        <li class="level2 col-6">
+                                            <a href="#">Мужчинам</a>
+                                            <ul class="menu-level-2 col-6">
+                                            </ul>
+                                            <div class="mega-product col-6">
+                                                <a href="#"><img src="img/mega_2.jpg" alt="" class="img-responsive"></a>
+                                            </div>
+                                            <div class="cleafix"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                            <li class="level1"><a href="" title="home-logo"><img src="img/logo.png" alt="logo" class="img-reponsive change-size"></a></li>
+                            <li class="level1 dropdown hassub">
+                                <a href="#">Стать продавцом</a>
+                            </li>
+                            <li class="level1 active dropdown">
+                                <a href="#">Бренды</a>
+                                <span class="plus js-plus-icon"></span>
+                                <ul class="dropdown-menu menu-level-1">
+                                    <li class="level3">Уличная одежда</li>
+                                    <li class="level3">С заботой от бабушек</li>
+                                    <li class="level3">Рюкзаки</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end menu with logo-->
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="header-top hidden-lg hidden-md">
+                <div class="container container-40">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="logo-mobile hidden-lg hidden-md">
+                                <a href="" title="home-logo"><img src="img/cosre.png" alt="logo" class="img-reponsive"></a>
+                            </div>
+                            <!--end logo-->
+                            <button type="button" class="navbar-toggle icon-mobile" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-menu"></span>
+                            </button>
+                            <nav class="navbar main-menu">
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav js-menubar">
+                                        <li class="level1 active dropdown"><a href="#">Home</a>
+                                            <span class="plus js-plus-icon"></span>
+                                            <ul class="dropdown-menu menu-level-1">
+                                            </ul>
+                                        </li>
+                                        <li class="level1 dropdown hassub"><a href="#">Shop</a>
+                                            <span class="plus js-plus-icon"></span>
+                                            <div class="menu-level-1 dropdown-menu">
+                                                <ul class="level1">
+                                                    <li class="level2 col-6">
+                                                        <a href="#">Shop pages</a>
+                                                        <ul class="menu-level-2 col-6">
+                                                        </ul>
+                                                        <div class="mega-product col-6">
+                                                            <a href="#"><img src="img/mega_1.jpg" alt="" class="img-responsive"></a>
+                                                        </div>
+                                                        <div class="cleafix"></div>
+                                                    </li>
+                                                    <li class="level2 col-6">
+                                                        <a href="#">Product demo</a>
+                                                        <ul class="menu-level-2 col-6">
+                                                        </ul>
+                                                        <div class="mega-product col-6">
+                                                            <a href="#"><img src="img/mega_2.jpg" alt="" class="img-responsive"></a>
+                                                        </div>
+                                                        <div class="cleafix"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </li>
+                                        <li class="level1 active dropdown">
+                                            <a href="#">Pages</a>
+                                            <span class="plus js-plus-icon"></span>
+                                            <ul class="dropdown-menu menu-level-1">
+                                            </ul>
+                                        </li>
+                                        <li class="level1 dropdown hassub">
+                                            <a href="#">Features</a>
+                                            <span class="plus js-plus-icon"></span>
+                                            <div class="menu-level-1 dropdown-menu">
+                                                <ul class="level1">
+                                                    <li class="level2 col-3">
+                                                        <a href="#">Other Pages</a>
+                                                        <ul class="menu-level-2">
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level2 col-3">
+                                                        <a href="#">Shop Style</a>
+                                                        <ul class="menu-level-2">
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level2 col-3">
+                                                        <a href="#">Lookbook</a>
+                                                        <ul class="menu-level-2">
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </li>
+                                        <li class="level1 active dropdown">
+                                            <a href="#">Elements</a>
+                                            <span class="plus js-plus-icon"></span>
+                                            <ul class="dropdown-menu menu-level-1">
+                                            </ul>
+                                        </li>
+                                        <li class="level1 active dropdown">
+                                            <a href="#">Blog</a>
+                                            <span class="plus js-plus-icon"></span>
+                                            <ul class="dropdown-menu menu-level-1">
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!--slide-->
+        <div class="page-heading slider-homecate js-homecate">
+            <div class="slider-img">
+                <img src="img/homecate_slider.jpg" alt="" class="img-reponsive">
+                <div class="container homecate-cosre-content left">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="homecate-cosre-title-wrap">
+                                <span class="home-cate-subtitle">пиндосы сосать</span>
+                                <h3 class="homecate-title-block left">россия рулит</h3>
+                                <a href="" class="btn-shop c-black">О проекте</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/bg5.jpg" alt="" class="img-reponsive">
+                <div class="container homecate-cosre-content center">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="homecate-cosre-title-wrap">
+                                <span class="home-cate-subtitle">америкосы дауны</span>
+                                <h3 class="homecate-title-block center">лучший шмот</h3>
+                                <a href="" class="btn-shop c-black">смотреть носки бабки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/home_category_bg.jpg" alt="" class="img-reponsive">
+            </div>
+        </div>
+        <!--endslide-->
+        <!--wrapper product zz -->
+        <div class="container container-42 wrapper-product product-homecate space-v1">
+            <div class="row space-50">
+                <div class="col-xs-12 col-sm-6 col-md-6 column-1">
+                    <div class="product-info-ver2 left col-sm-12 col-lg-8">
+                        <h4 class="product-cate ver3">Как мы работаем?</h4>
+                        <h3 class="product-title left">
+                            Для покупателей
+                        </h3>
+                        <p class="product-desc">1</p>
+                        <p class="product-desc">2</p>
+                        <p class="product-desc">3</p>
+                        <a href="" class="btn-shop">Перейти в каталог</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 column-2">
+                    <div class="product-img-notfull">
+                        <img src="img/homecate_edit_3.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 column-1 fix-margin">
+                    <div class="product-img-notfull">
+                        <img src="img/homecate_edit_3.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 column-2 fixed">
+                    <div class="product-info-ver2 right col-sm-12 col-lg-8">
+                        <h4 class="product-cate ver3">Как мы работаем?</h4>
+                        <h3 class="product-title right">
+                            Для продавцов
+                        </h3>
+                        <p class="product-desc">1</p>
+                        <p class="product-desc">2</p>
+                        <p class="product-desc">3</p>
+                        <a href="" class="btn-shop">Стать продавцом</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end wrapper product zz -->
+        <!-- shop by cate-->
+        <div class="wrapper-product product-homecate-cat change-mr">
+            <div class="container brand-wrapper">
+                <h1 class="brand__title">Бренды уже с нами </h1>
+                <div class="jc-sb ">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 product-item product-item_custom">
+                        <div class="product-images">
+                            <a href="#" class="hover-images effect"><img src="img/products/shortshirt.jpg" alt="photo" class="img-reponsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 product-item product-item_custom">
+                        <div class="product-images">
+                            <a href="#" class="hover-images effect"><img src="img/products/shortshirt.jpg" alt="photo" class="img-reponsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 product-item product-item_custom">
+                        <div class="product-images">
+                            <a href="#" class="hover-images effect"><img src="img/products/shortshirt.jpg" alt="photo" class="img-reponsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 product-item product-item_custom">
+                        <div class="product-images">
+                            <a href="#" class="hover-images effect"><img src="img/products/shortshirt.jpg" alt="photo" class="img-reponsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="brand__button">Перейти в каталог брендов
+                </button>
+            </div>
+        </div>
+        <!-- end shopbycate-->
+        <!-- footer -->
+        <footer>
+            <div class="container container-40">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="menu-footer">
+                            <ul>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Политика соглашения</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="newletter-form">
+                            <h3 class="footer-title text-center">Подписка на рассылку</h3>
+                            <form action="#">
+                                <input type="text" name="s" placeholder="электронная почта" class="form-control">
+                                <button type="submit" class="btn btn-submit">
+                                    <i class="fa fa-angle-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="social">
+                            <a href="#" title="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                            <a href="#" title="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                            <a href="#" title="google plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                            <a href="#" title="Pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </a>
+                            <a href="#" title="rss">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="#" class="scroll_top">Наверх<span></span></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
