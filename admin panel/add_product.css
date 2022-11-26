@@ -36,8 +36,7 @@ textarea {
 #container {
   border: solid 3px #474544;
   max-width: 768px;
-  margin: 60px auto;
-  margin-bottom: 60px !important;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -68,9 +67,8 @@ h1 {
 
 .fixed-navigation {
   position: -webkit-sticky;
-  position: sticky;
-  border-bottom: 1px solid #efefef;
-  top: 0 !important; 
+  position: fixed;
+  border-bottom: 1px solid #efefef; 
 }
 
 .icon {
@@ -229,4 +227,16 @@ textarea {
         font-size: 0.875em;
     }
 
+}
+
+.my-header{
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+
+}
+
+.wrapper_custom{
+  padding-top: 160px;
+  background: white;
 }

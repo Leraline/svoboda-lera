@@ -12226,12 +12226,12 @@ admin-table.admin-table.cart-admin-table td {
 @media (min-width: 1199px) {
   .header-v4 .topbar {
     border-bottom: 1px solid #efefef;
-    padding: 34px 0; }
+    padding: 10px 0; }
     .header-v4 .topbar.bd-v1 {
       border-bottom: 1px solid #dcdddf; }
   .header-v4 .topbar-center {
     margin: 0 auto;
-    width: 900px;
+    width: 1300px;
     display: inline-block; }
     .header-v4 .topbar-center .navbar-nav {
       float: none;
