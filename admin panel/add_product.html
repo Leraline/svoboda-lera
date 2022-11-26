@@ -48,34 +48,57 @@
         </div>
     </header>
     <div class="wrapper_custom">
-    
         <div id="container">
             <div class="underline">
             </div>
             <div class="icon_wrapper">
             </div>
             <form action="#" method="post" id="contact_form">
-              <div class="name">
-                <label for="name"></label>
-                <input type="text" placeholder="Наименование товара" name="name" id="name_input" required>
-              </div>
-              <div class="email">
-                <label for="email"></label>
-                <input type="email" placeholder="Артикул" name="email" id="email_input" required>
-              </div>
-              <div class="telephone">
-                <label for="name"></label>
-                <input type="text" placeholder="Штрихкод" name="telephone" id="telephone_input" required>
-              </div>
-              <div class="message">
-                <label for="message"></label>
-                <textarea name="message" placeholder="Описание" id="message_input" cols="30" rows="5" required></textarea>
-              </div>
-              <div class="submit">
-                <input type="submit" value="Создать товар" id="form_button" />
-              </div>
+                <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="НАИМЕНОВАНИЕ ТОВАРА" name="name" id="name_input" required>
+                </div>
+                <div class="article">
+                    <label for="article"></label>
+                    <input type="text" placeholder="АРТИКУЛ" name="article" id="article_input" required>
+                </div>
+                <div class="barcode">
+                    <label for="barcode"></label>
+                    <input type="text" placeholder="ШТРИХКОД" name="barcode" id="barcode_input" required>
+                </div>
+                <div class="cost">
+                    <label for="cost"></label>
+                    <input type="text" placeholder="ЦЕНА В РУБЛЯХ БЕЗ СКИДКИ" name="cost" id="cost_input" required>
+                </div>
+                <div class="description">
+                    <label for="description"></label>
+                    <textarea name="description" placeholder="ОПИСАНИЕ" id="description_input" cols="30" rows="5" required></textarea>
+                </div>
+                <div class="pictures">
+                    <label class="label_text" for="pictures">ПРИКРЕПИТЕ ИЗОБРАЖЕНИЕ(ПЕРВОЕ БУДЕТ ГЛАВНЫМ)</label>
+                    <input type="file" name="file" id="input__file" class="input input__file">
+                    <label for="input__file" class="input__file-button">
+                        <span class="input__file-icon-wrapper"><img class="input__file-icon" src="../img/download.png" alt="Выбрать файл" width="25"></span>
+                        <span class="input__file-button-text">ВЫБЕРИТЕ ФАЙЛ</span>
+                    </label>
+                </div>
+                <div class="sizes">
+                    <label class="label_text change-float" for="sizes">ДОБАВЬТЕ РАЗМЕРЫ</label>
+                        <span class="plus_btn"><img class="plus_btn-icon" src="img\plus.png"></span>
+                    </span>
+                    <div class="sizes-wrapper">
+                        <input class= 'keydown' maxlength="25" type="text" placeholder="ВВЕДИТЕ РАЗМЕР" name="sizes" id="sizes_input">
+                    </div>
+                    <label class="label_text">ТАБЛИЦА РАЗМЕРОВ</label>
+                    <div class="sizes-table">
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="СОЗДАТЬ ТОВАР" id="form_button" />
+                </div>
             </form><!-- // End form -->
         </div><!-- // End #container --> 
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>
